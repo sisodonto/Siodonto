@@ -18,27 +18,27 @@ http://sisodontoonline.com/s-agenda/service/id_dentista-intervalo-data-hora_fixa
 
 Filtro de agenta por id_dentista/data inicial/ data final
 *Exemplo:*<br>
-http://sisodontoonline.com/sis-odonto/s-agenda/service/id_dentista-intervalo-data/13/31-07-2015/12-12-2015
+http://sisodontoonline.com/s-agenda/service/id_dentista-intervalo-data/12/24-07-2017/31-10-2017
 
 Filtro de agenda por id_dentista/data e hora fixa
 *Exemplo:*<br>
-http://sisodontoonline.com/sis-odonto/s-agenda/service/id_dentista-data-hora-fixa/3/12-10-2017%2010:30:00
+http://sisodontoonline.com/s-agenda/service/id_dentista-data-hora-fixa/3/12-10-2017%2010:30:00
 
 Filtro de agenda por id_dentista e uma data fixa no formato 99-99-9999
 *Exemplo:*<br>
-http://sisodontoonline.com/sis-odonto/s-agenda/service/id_dentista-data-fixa/3/12-10-2017
+http://sisodontoonline.com/s-agenda/service/id_dentista-data-fixa/3/12-10-2017
 
 Filtro de pacientes agendados com um dentista específico
 *Exemplo:*<br>
-http://sisodontoonline.com/sis-odonto/s-agenda/service/pacientes_do_dentista/13
+http://sisodontoonline.com/s-agenda/service/pacientes_do_dentista/13
 
 Filtro de paciente relacionado com um dentista pelo nome. Passa o id do dentista e o nome do paciente.
 *Exemplo:*<br>
-http://sisodontoonline.comsis-odonto/s-agenda/service/nome-paciente_do_dentista/12/Beta%20gomes
+http://sisodontoonline.com/s-agenda/service/nome-paciente_do_dentista/12/Beta%20gomes
 
 Filtro de paciente relacionado com dentista pelo cpf. Informa o id do dentista e o cpf do paciente.
 *Exemplo:*<br>
-http://sisodontoonline.comsis-odonto/s-agenda/service/cpf-paciente_do_dentista/12/154.879.656-26
+http://sisodontoonline.com/s-agenda/service/cpf-paciente_do_dentista/12/154.879.656-26
 
 Consultar data e hora
 *Exemplo:*<br>
