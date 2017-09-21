@@ -1,0 +1,119 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="title" id="title">Relatório de Fornecedor</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-right">
+                                    <a href="javascript:window.history.go(-1)" class="btn btn-default">Voltar</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <form method="post">
+                           
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" class="form-control" id="relatorio_nome" name="nome" placeholder="Nome" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Capital Social</label>
+                                        <input type="text" class="form-control" id="relatorio_capital_social" name="capital_social" placeholder="Capital Social" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Inscrição Estadual</label>
+                                        <input type="text" class="form-control" id="relatorio_inscricao_estadual" name="inscricao_estadual" placeholder="Inscrição estadual" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Linha de Produto</label>
+                                        <input type="text" class="form-control" id="relatorio_linha_produto" name="linha_produto" placeholder="Linha de Produto" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tipo de Empresa</label>
+                                        <select data-live-search="true" id="relatorio_tipo_empresa" name="fk_tipoempresas" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($tipos_de_empresas as $key => $value): ?>
+                                            <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Ramo de Negócios</label>
+                                        <select data-live-search="true" id="relatorio_ramo_negocio" name="fk_ramodenegocios" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($ramo_de_negocios as $key => $value): ?>
+                                            <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Natureza Jurídica</label>
+                                        <select data-live-search="true" id="relatorio_natureza_juridica" name="fk_naturezajuridica" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($naturezas_juridicas as $key => $value): ?>
+                                            <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Relatório</p>
+                                    <div class="content table-responsive table-full-width">
+                                        <table id="relatorio-table" class="table table-striped table-no-bordered table-hover dataTable dtr-inline table-dentistas">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Nome</th>
+                                                    <th>Capital Social</th>
+                                                    <th>Inscrição Estadual</th>
+                                                    <th>Linha de Produto</th>
+                                                    <th>Tipo de Empresa</th>
+                                                    <th>Ramo de Negócios</th>
+                                                    <th>Natureza Jurídica</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbody">
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="<?php echo URL_BASE; ?>relatorios" class="btn btn-defualt">Página principal de relatórios</a>
+                            <a href="#" id="relatorio-pdf" class="btn btn-default pull-right">Gerar relatório PDF</a>
+                            <div class="clearfix"></div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

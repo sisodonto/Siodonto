@@ -1,0 +1,167 @@
+[15-Sep-2017 16:30:10 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'new' (T_NEW), expecting identifier (T_STRING) in /home/sisod695/public_html/app/controllers/fornecedores.php on line 36
+[15-Sep-2017 16:31:55 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'new' (T_NEW), expecting identifier (T_STRING) in /home/sisod695/public_html/app/controllers/fornecedores.php on line 36
+[18-Sep-2017 10:11:04 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 217
+[18-Sep-2017 10:11:05 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 219
+[18-Sep-2017 11:21:57 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 217
+[18-Sep-2017 11:21:57 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 219
+[18-Sep-2017 11:24:54 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 217
+[18-Sep-2017 11:24:54 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 219
+[18-Sep-2017 11:27:25 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 217
+[18-Sep-2017 11:27:25 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 219
+[18-Sep-2017 11:45:53 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 217
+[18-Sep-2017 11:45:53 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 219
+[18-Sep-2017 11:48:43 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 105
+[18-Sep-2017 11:48:43 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 106
+[18-Sep-2017 11:48:43 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 122
+[18-Sep-2017 11:48:43 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 123
+[18-Sep-2017 11:48:43 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 105
+[18-Sep-2017 11:48:43 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 106
+[18-Sep-2017 11:48:43 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 122
+[18-Sep-2017 11:48:43 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 123
+[18-Sep-2017 11:53:11 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 137
+[18-Sep-2017 11:53:11 America/Sao_Paulo] PHP Warning:  Attempt to assign property of non-object in /home/sisod695/public_html/app/models/agendas.php on line 137
+[18-Sep-2017 12:07:46 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[18-Sep-2017 12:07:46 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[18-Sep-2017 12:41:44 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[18-Sep-2017 12:41:44 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[19-Sep-2017 20:16:11 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[19-Sep-2017 20:16:11 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[19-Sep-2017 20:47:59 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[19-Sep-2017 20:47:59 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[19-Sep-2017 21:02:11 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[19-Sep-2017 21:02:11 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[19-Sep-2017 21:02:35 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[19-Sep-2017 21:02:35 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[19-Sep-2017 21:13:16 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[19-Sep-2017 21:13:16 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[19-Sep-2017 21:16:38 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[19-Sep-2017 21:16:38 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[19-Sep-2017 21:42:21 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[19-Sep-2017 21:42:21 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 11:15:06 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 11:15:06 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:01:49 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:01:49 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:02:31 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:02:31 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:06:16 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:06:16 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:33:48 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:33:48 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:34:08 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:34:08 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:34:13 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:34:13 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:43:52 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:43:52 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:43:58 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:43:58 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:47:35 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:47:35 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:49:10 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:49:10 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:49:23 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:49:23 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:51:16 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:51:16 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:53:23 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:53:23 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:54:13 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:54:13 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:54:20 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:54:20 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:54:55 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:54:55 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:54:56 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:54:56 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:55:21 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:55:21 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:55:21 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:55:21 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:55:29 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:55:29 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:55:33 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:55:33 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:55:43 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:55:43 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:57:03 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:57:03 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:57:07 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:57:07 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:57:17 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:57:17 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:57:48 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:57:48 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:58:16 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:58:16 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:58:28 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:58:28 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:58:42 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:58:42 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:58:45 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:58:45 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:58:57 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:58:57 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:59:03 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:59:03 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[20-Sep-2017 12:59:24 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 225
+[20-Sep-2017 12:59:24 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 227
+[21-Sep-2017 11:22:48 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:24:07 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:26:27 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:26:44 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:26:53 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:28:16 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:32:08 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/app/models/agendas.php on line 103
+[21-Sep-2017 11:34:10 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/app/models/agendas.php on line 103
+[21-Sep-2017 11:45:41 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:45:41 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:45:53 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:45:53 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:46:15 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:46:15 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:46:39 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:46:39 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:47:00 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:47:00 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:47:23 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:47:23 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:47:55 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:47:55 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:48:11 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:48:11 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:49:24 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 239
+[21-Sep-2017 11:49:24 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 241
+[21-Sep-2017 11:50:04 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:50:04 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:55:10 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:55:10 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:56:23 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:56:23 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:58:28 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:58:28 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:58:54 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 11:58:54 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:01:56 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 126
+[21-Sep-2017 12:01:56 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 126
+[21-Sep-2017 12:04:13 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 126
+[21-Sep-2017 12:04:13 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 126
+[21-Sep-2017 12:09:11 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:09:11 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:10:53 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:10:53 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:23:44 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:23:44 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:24:57 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:24:57 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:25:55 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:25:55 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:27:25 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:27:25 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:28:18 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 12:28:18 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 13:22:25 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/app/models/agendas.php on line 103
+[21-Sep-2017 13:30:49 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 239
+[21-Sep-2017 13:30:49 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/sisod695/public_html/app/models/agendas.php on line 241
+[21-Sep-2017 14:38:56 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123
+[21-Sep-2017 14:38:56 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/sisod695/public_html/core/dbrecord/dbrecord.php on line 123

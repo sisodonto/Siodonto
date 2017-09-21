@@ -1,0 +1,72 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-user">
+                <?php $this->alert->show($_QUERY); ?>
+                <div class="content">
+                    <h3>Dados do Usuário</h3>
+                    <?php foreach ($usuarios as $key => $value): ?>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><b>#ID</b> <?php echo $value->id; ?></p>
+                            <p><b>Nome</b> <?php echo $value->nome; ?></p>
+                            <p><b>Tipo</b> <?php echo $value->tipos->nome; ?></p>
+                            <p><b>Email</b> <?php echo $value->email; ?></p>
+                            <p><b>Telefone</b> <?php echo $value->telefone; ?></p>
+                            <?php if ($value->tipos->nome == 'paciente'): ?>
+                            <p><b>Convênio</b> <?php echo $value->convenios->nome_fantasia; ?></p>
+                            <p><b>RG</b> <?php echo $value->rg; ?></p>
+                            <p><b>CPF</b> <?php echo $value->cpf; ?></p>
+                            <?php endif ?>
+                            <?php if ($value->tipos->nome == 'dentista'): ?>
+                            <p><b>CRO</b> <?php echo $value->cro; ?></p>
+                            <p><b>Dias de atendimento</b> 
+                                <?php  
+                                if (!is_array($usuarios[0]->dias)) {
+                                    echo " <small class=\"dias\">{$usuarios[0]->dias->nome}</small> ";
+                                } else {
+                                    foreach ($usuarios[0]->dias as $dias_key => $dias_value) {
+                                        if (end($usuarios[0]->dias) == $dias_value) {
+                                            echo " <small class=\"dias\">{$dias_value->nome}</small> ";
+                                        } else {
+                                            echo " <small class=\"dias\">{$dias_value->nome}</small>, ";
+                                        }
+                                    } 
+                                }
+                                ?>
+                            </p>
+                            <?php $inicio = date('H:i', strtotime($value->horario_atendimento_inicio)); ?>
+                            <?php $fim = date('H:i', strtotime($value->horario_atendimento_fim)); ?>
+                            <p><b>Horário de entrada</b> <?php echo "{$inicio}hs"; ?></p>
+                            <p><b>Horário de saída</b> <?php echo "{$fim}hs"; ?></p>
+                            <?php endif ?>
+                        </div>
+                            
+                        <div class="col-md-6">
+                            <?php if ($value->tipos->nome == 'secretaria' || $value->tipos->nome == 'paciente' || $value->tipos->nome == 'dentista'): ?>
+                            <p><b>Data de Nascimento</b> <?php echo date('d/m/Y', strtotime($value->nascimento)); ?></p>
+                            <p><b>Telefone Residencial</b> <?php echo $value->telefone_residencial; ?></p>
+                            <p><b>Rua</b> <?php echo $value->rua; ?></p>
+                            <p><b>Bairro</b> <?php echo $value->bairro; ?></p>
+                            <p><b>Número</b> <?php echo $value->numero; ?></p>
+                            <p><b>Cidade</b> <?php echo $value->cidade; ?></p>
+                            <p><b>Cep</b> <?php echo $value->cep; ?></p>
+                            <p><b>Estado</b> <?php echo $value->estados->nome; ?></p>
+                            <p><b>Cadastrado em</b> <?php echo date('d/m/Y H:i:s', strtotime($value->created_at)); ?></p>
+                            <?php endif ?>
+                        </div>
+                    </div>
+                    <?php endforeach ?>
+                </div>
+                <div class="footer">
+                    <a href="javascript:window.history.go(-1)" class="btn btn-defualt">Voltar</a>
+                    <?php if ($_SESSION['tipo'] == 1 || $_SESSION['tipo'] == 2): ?>
+                    <a href="<?php echo URL_BASE; ?>usuarios" class="btn btn-defualt">Tabela Principal</a>
+                    <a href="<?php echo URL_BASE ?>painel/usuarios/edit/<?php echo $value->id ?>" class="btn btn-defualt">Atualizar</a>
+                    <?php endif ?>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

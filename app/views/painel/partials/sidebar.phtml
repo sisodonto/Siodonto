@@ -1,0 +1,87 @@
+<div class="sidebar" data-color="gray" data-image="<?php echo URL_BASE; ?>app/assets/img/sidebar-5.jpg">
+    <div class="sidebar-wrapper">
+        <div class="logo">
+            <a href="<?php echo URL_BASE; ?>painel" class="logo-text">
+                Sis Odonto
+            </a>
+        </div>
+
+        <ul class="nav">
+            <?php if ($_SESSION['tipo'] == 1 || $_SESSION['tipo'] == 2): ?>
+                <li <?php echo ($_GET['url'] == 'agenda')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>agenda">
+                        <i class="pe-7s-notebook"></i>
+                        <p>Agenda</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'convenio')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>convenio">
+                        <i class="pe-7s-note2"></i>
+                        <p>Convênios</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'dentista')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>dentista">
+                        <i class="pe-7s-id"></i>
+                        <p>Dentistas</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'fornecedor')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>fornecedor">
+                        <i class="pe-7s-network"></i>
+                        <p>Fornecedor</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'paciente')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>paciente">
+                        <i class="pe-7s-users"></i>
+                        <p>Pacientes</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'produto-protese')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>produto-protese">
+                        <i class="pe-7s-box1"></i>
+                        <p>Produtos Protese</p>
+                    </a>
+                </li>
+                 <li <?php echo ($_GET['url'] == 'produto-medicamento')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>produto-medicamento">
+                        <i class="pe-7s-box1"></i>
+                        <p>Produtos Medicamento</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'secretaria')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>secretaria">
+                        <i class="pe-7s-user-female"></i>
+                        <p>Secretárias</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'usuario')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>painel/usuarios/show/<?php echo $_SESSION['id']; ?>">
+                        <i class="pe-7s-user"></i>
+                        <p>Seus dados</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'tratamento')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>tratamento">
+                        <i class="pe-7s-bandaid"></i>
+                        <p>Tratamentos</p>
+                    </a>
+                </li>
+            <?php elseif ($_SESSION['tipo'] == 3): ?>
+                <li <?php echo ($_GET['url'] == 'agenda')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>agenda">
+                        <i class="pe-7s-notebook"></i>
+                        <p>Agenda</p>
+                    </a>
+                </li>
+                <li <?php echo ($_GET['url'] == 'paciente')?'class="active"':''; ?>>
+                    <a href="<?php echo URL_BASE ?>paciente">
+                        <i class="pe-7s-users"></i>
+                        <p>Pacientes</p>
+                    </a>
+                </li>
+            <?php endif ?>
+        </ul>
+    </div>
+</div>

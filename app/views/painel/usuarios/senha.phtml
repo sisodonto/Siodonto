@@ -1,0 +1,39 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <?php $this->alert->show($_QUERY); ?>
+                    <div class="header">
+                        <p class="title">Alterar Senha</p>
+                    </div>
+                    <div class="content">
+                        <form method="post" action="<?php echo URL_BASE; ?>atualizar-senha" data-toggle="validator">
+                            <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Senha</label>
+                                        <input type="password" class="form-control" name="senha" placeholder="Senha" id="senha" value="" data-minlength="6" data-error="Mínimo de seis (6) digitos" required>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Confirmar Senha</label>
+                                        <input type="password" class="form-control" placeholder="Confirmar senha" value="" data-match="#senha" data-match-error="Atenção! As senhas não estão iguais." required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="javascript:window.history.go(-1)" class="btn btn-defualt">Voltar</a>
+                            <button type="submit" class="btn btn-default pull-right">Confirmar</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

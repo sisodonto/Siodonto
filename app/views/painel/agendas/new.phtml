@@ -1,0 +1,111 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <?php $this->alert->show($_QUERY); ?>
+                    <div class="header">
+                        <p class="title">Nova agenda</p>
+                    </div>
+                    <div class="content">
+                        <form method="post" action="<?php echo URL_BASE; ?>criar-agenda" data-toggle="validator">
+                           
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Dentista</label>
+                                        <select data-live-search="true" autofocus="true" id="id_dentistas" name="id_dentistas" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                            <option value="">Selecione</option>
+                                            <?php 
+                                                foreach ($dentistas as $key => $value):
+                                                    $dias = $agenda->formatar_dias($value->fk_dias); 
+                                                    $inicio = date('H:i',strtotime($value->horario_atendimento_inicio));
+                                                    $fim = date('H:i',strtotime($value->horario_atendimento_fim));
+                                                    $dia_calendario = $agenda->formatar_dias_para_calendario($value->fk_dias);
+                                            ?>
+                                                 <option value="<?php echo $value->id; ?>" data-dia="<?php echo $dia_calendario; ?>"><?php echo "{$value->nome} Trabalha {$dias} das {$inicio} às {$fim}"; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Paciente</label>
+                                        <select data-live-search="true" autofocus="true" id="id_pacientes" name="id_pacientes" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($pacientes as $key => $value): ?>
+                                                 <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Tratamento</label>
+                                        <select data-live-search="true" autofocus="true" id="fk_tratamentos" name="fk_tratamentos" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($tratamentos as $key => $value): ?>
+                                                 <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Dia/Data de atendimento</label>
+                                        <input type="text" class="form-control" id="data_hora" name="data_hora" placeholder="Dia/Data de atendimento" value="" required />
+                                        <div class="help-block with-errors" id="agenda_data_hora"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label>Anotações adicionais</label>
+                                        <textarea class="form-control" id="anotacoes" name="anotacoes" placeholder="Anotações adicionais (Não obrigatório)"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:window.history.go(-1)" class="btn btn-defualt">Voltar</a>
+                            <button type="submit" class="btn btn-default pull-right">Salvar dados</button>
+                            <div class="clearfix"></div>
+                        </form>
+
+                        <div class="row" id="linha_separadora">
+                            <div class="col-md-12">
+                            <hr>
+                            </div>
+                        </div>
+                        
+                        <div class="row" id="tabela_agenda_dentistas">
+                            <div class="col-md-12">
+                                <p>Agenda do dentista</p>
+                                <div class="content table-responsive table-full-width">
+                                    <table class="table table-striped table-no-bordered table-hover dataTable dtr-inline table-dentistas">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Dentista</th>
+                                                <th>Paciente</th>
+                                                <th>Tratamento</th>
+                                                <th>Data Marcada</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody">
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

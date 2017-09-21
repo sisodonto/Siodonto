@@ -1,0 +1,241 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <?php $this->alert->show($_QUERY); ?>
+                    <div class="header">
+                        <p class="title">Atualizar Usuário</p>
+                    </div>
+                    <div class="content">
+                        <div id="warning" class="alert-warning" style="border-radius: 5px; padding: 5px; margin-bottom: 20px;">
+                        <p>
+                        Os campos referentes a tipo de usuário, atendimento e horários não podem ser alterados. Pois este dentista possui consultas agendadas que estão ativas ainda no momento.   
+                        </p>
+                        </div>
+                        <form method="post" action="<?php echo URL_BASE; ?>atualizar-usuario" data-toggle="validator">
+                            <input type="hidden" id="usuario_id" name="id" value="<?php echo $usuarios[0]->id; ?>">
+                            <input type="hidden" id="usuario_tipo" value="<?php echo $usuarios[0]->tipos->id; ?>">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Tipo de usuário</label>
+                                        <select autofocus="true" id="tipo_usuario" name="fk_tipos" class="form-control selectpicker" data-title="Tipo de usuário" data-style="btn-default btn-fill btn-block" data-menu-style="dropdown-blue" required>
+                                            <option>Selecione</option>
+                                            <?php foreach ($tipos as $key => $value): ?>
+                                            <option <?php echo ($value->id == $usuarios[0]->tipos->id)?'selected':''; ?> value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" value="<?php echo $usuarios[0]->nome; ?>" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo $usuarios[0]->email; ?>" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Telefone Celular</label>
+                                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" value="<?php echo $usuarios[0]->telefone; ?>" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="form_cliente_secretaria">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Data de Nascimento</label>
+                                            <div class="input-group date datepicker">
+                                                <input type="text" class="form-control" id="nascimento" name="nascimento" placeholder="Data de Nascimento" value="<?php echo date('d/m/Y H:i:s', strtotime($usuarios[0]->nascimento)); ?>" required />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Sexo</label>
+                                            <select id="sexo" name="sexo" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                                <option value="">Selecione</option>
+                                                <option value="m" <?php echo ($usuarios[0]->sexo == 'm')?'selected':''; ?>>Masculino</option>
+                                                <option value="f" <?php echo ($usuarios[0]->sexo == 'f')?'selected':''; ?>>Feminino</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>RG</label>
+                                            <input type="text" class="form-control" id="rg" name="rg" placeholder="RG" value="<?php echo $usuarios[0]->rg; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>CPF</label>
+                                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF" value="<?php echo $usuarios[0]->cpf; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group" id="convenios">
+                                            <label>Convênio</label>
+                                            <select autofocus="true" id="fk_convenios" name="fk_convenios" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                                <option value="">Selecione</option>
+                                                <?php foreach ($convenios as $key => $value): ?>
+                                                     <option <?php echo ($value->id == $usuarios[0]->convenios->id)?'selected':''; ?> value="<?php echo $value->id; ?>"><?php echo $value->nome_fantasia; ?></option>
+                                                <?php endforeach ?>
+                                            </select>
+                                            <span class="help-block with-errors"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Telefone Residencial</label>
+                                            <input type="text" class="form-control" id="telefone_residencial" name="telefone_residencial" placeholder="Telefone Residencial" value="<?php echo $usuarios[0]->telefone_residencial; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Rua</label>
+                                            <input type="text" class="form-control" id="rua" name="rua" placeholder="Rua" value="<?php echo $usuarios[0]->rua; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Bairro</label>
+                                            <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro" value="<?php echo $usuarios[0]->bairro; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Número</label>
+                                            <input type="text" class="form-control" id="numero" name="numero" placeholder="Número" value="<?php echo $usuarios[0]->numero; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Cidade</label>
+                                            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" value="<?php echo $usuarios[0]->cidade; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Cep</label>
+                                            <input type="text" class="form-control" id="cep" name="cep" placeholder="Cep" value="<?php echo $usuarios[0]->cep; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Estado</label>
+                                            <select autofocus="true" id="fk_estados" name="fk_estados" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                                <option value="">Selecione</option>
+                                                <?php foreach ($estados as $key => $value): ?>
+                                                <option <?php echo ($usuarios[0]->estados->id == $value->id)?'selected':''; ?> value="<?php echo $value->id; ?>"><?php echo "{$value->nome} ({$value->uf})"; ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="form_dentista">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>CRO</label>
+                                            <input type="text" class="form-control" id="cro" name="cro" placeholder="CRO" value="<?php echo $usuarios[0]->cro; ?>" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Dias de atendimento</label>
+                                            <select  id="dias" name="fk_dias[]" multiple class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-fill btn-block" data-menu-style="dropdown-blue" required>
+                                                <option value="">Selecione</option>
+                                                <?php
+                                                foreach ($dias as $key => $value):
+                                                    $selected = '';
+                                                    if(is_array($usuarios[0]->dias)){
+                                                        foreach ($usuarios[0]->dias as $dkey => $dvalue) {
+                                                            if ($value->id == $dvalue->id) {
+                                                                $selected = 'selected';
+                                                            }
+                                                        }
+                                                    } else {
+                                                        if ($value->id == $usuarios[0]->dias->id) {
+                                                            $selected = 'selected';
+                                                        }
+                                                    }
+                                                ?>
+                                                <option <?php echo $selected; ?> value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                            <div class="help-block with-errors" id="horario-erro"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Atende das</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control timepicker" id="horario_atendimento_inicio" name="horario_atendimento_inicio" placeholder="Hora de início" value="<?php echo $usuarios[0]->horario_atendimento_inicio; ?>" required>
+                                                <span class="input-group-addon" style="cursor: pointer;">
+                                                    <span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Até as</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control timepicker" id="horario_atendimento_fim" name="horario_atendimento_fim" placeholder="Hora de fim" value="<?php echo $usuarios[0]->horario_atendimento_fim; ?>" required>
+                                                <span class="input-group-addon" style="cursor: pointer;">
+                                                    <span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:window.history.go(-1)" class="btn btn-defualt">Voltar</a>
+                            <button type="submit" id="btn" class="btn btn-default pull-right">Atualizar dados</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

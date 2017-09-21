@@ -1,0 +1,201 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Bem vindo a Sisodonto</h4>
+                        <p>O que deseja cadastrar?</p>
+                    </div>
+                    <div class="content">
+                        <?php if ($_SESSION['tipo'] == 1 || $_SESSION['tipo'] == 2): ?>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>nova-agenda">
+                                        <i class="pe-7s-notebook big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Agenda</label>        
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>novo-convenio">
+                                        <i class="pe-7s-note2 big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Convênios</label>        
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>novo-usuario">
+                                        <i class="pe-7s-id big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Dentistas</label>        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>novo-fornecedor">
+                                        <i class="pe-7s-network big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Fornecedores</label>        
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>novo-usuario">
+                                        <i class="pe-7s-users big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Pacientes</label>        
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>novo-produto-protese">
+                                        <i class="pe-7s-box1 big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Produtos de Protese</label>        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>novo-produto-medicamento">
+                                        <i class="pe-7s-box1 big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Produtos de Medicamentos</label>        
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>novo-usuario">
+                                        <i class="pe-7s-user-female big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Secretárias</label>        
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>novo-tratamento">
+                                        <i class="pe-7s-bandaid big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Tipos de Tratamentos</label>        
+                                </div>
+                            </div>
+                        </div>
+                        <?php else: ?>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group main_icon">
+                                        <a href="<?php echo URL_BASE; ?>agenda">
+                                            <i class="pe-7s-notebook big"></i>
+                                        </a>
+                                        <br>
+                                        <label>Agenda</label>        
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group main_icon">
+                                        <a href="<?php echo URL_BASE; ?>paciente">
+                                            <i class="pe-7s-users big"></i>
+                                        </a>
+                                        <br>
+                                        <label>Pacientes</label>        
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endif ?>
+
+                        <div class="row">
+                            <div class="header">
+                                <h3>Visualização, pesquisa e alteração.</h3>
+                            </div>
+                        </div>
+                        
+                        <?php if ($_SESSION['tipo'] == 1 || $_SESSION['tipo'] == 2): ?>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>alterar-senha">
+                                        <i class="pe-7s-lock big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Alterar Senha</label>        
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>painel/usuarios/show/<?php echo $_SESSION['id']; ?>">
+                                        <i class="pe-7s-user big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Visualizar seus Dados</label>        
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>relatorios">
+                                        <i class="pe-7s-display2 big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Relatório</label>        
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>usuarios">
+                                        <i class="pe-7s-users big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Listar Usuários</label>        
+                                </div>
+                            </div>
+                        </div>
+                        <?php else: ?>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>alterar-senha">
+                                        <i class="pe-7s-lock big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Alterar Senha</label>        
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-4">
+                                <div class="form-group main_icon">
+                                    <a href="<?php echo URL_BASE; ?>painel/usuarios/show/<?php echo $_SESSION['id']; ?>">
+                                        <i class="pe-7s-user big"></i>
+                                    </a>
+                                    <br>
+                                    <label>Visualizar seus Dados</label>        
+                                </div>
+                            </div>
+                        </div>
+                        <?php endif ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title><?php echo $this->meta_title; ?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="<?php echo $this->meta_description; ?>" />
+	<meta name="keywords" content="<?php echo $this->meta_keywords; ?>" />
+	<link rel="shortcut icon" href="<?php echo URL_BASE; ?>app/assets/img/favicon144x144.png">
+	<?php //echo $this->css_files; ?>
+	
+	<link href="<?php echo URL_BASE; ?>app/assets/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="<?php echo URL_BASE; ?>app/assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link href="<?php echo URL_BASE; ?>app/assets/css/pe-icon-7-stroke.css" rel="stylesheet"/>
+	<link href="<?php echo URL_BASE; ?>app/assets/css/font-awesome.min.css" rel="stylesheet"/>
+	<link href="<?php echo URL_BASE; ?>app/assets/css/index.css" rel="stylesheet"/>
+
+    
+</head>
+<body>
+	<div class="wrapper">
+
+    	<?php require_once 'partials/sidebar.phtml'; ?>
+
+    	<div class="main-panel">
+	    	<?php require_once 'partials/navbar.phtml'; ?>
+		    <div class="content">
+		    	<?php require_once $this->painel->content(); ?>
+		    </div>
+	    	<?php require_once 'partials/footer.phtml'; ?>
+	    </div>
+	</div>
+
+	<?php //echo $this->js_files; ?>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/bootstrap.min.js" type="text/javascript"></script>
+	
+    <script src="<?php echo URL_BASE; ?>app/assets/js/moment.min.js"></script>
+    <script src="<?php echo URL_BASE; ?>app/assets/js/bootstrap-datetimepicker.js"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/bootstrap-selectpicker.js" type="text/javascript"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/jspdf.js" type="text/javascript"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/jspdf.plugin.autotable.js" type="text/javascript"></script>
+    <script src="<?php echo URL_BASE; ?>app/assets/js/index.js"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/jquery.maskMoney.js" type="text/javascript"></script>
+
+	<script src="<?php echo URL_BASE; ?>app/assets/js/jquery.datatables.js" type="text/javascript"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/bootstrap-table.js" type="text/javascript"></script>
+   
+    <script src="<?php echo URL_BASE; ?>app/assets/js/bootstrap-checkbox-radio-switch.js"></script>
+    <script src="<?php echo URL_BASE; ?>app/assets/js/chartist.min.js"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/bootstrap-notify.js" type="text/javascript"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/light-bootstrap-dashboard.js" type="text/javascript"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/validator.js" type="text/javascript"></script>
+	<script src="<?php echo URL_BASE; ?>app/assets/js/jquery.mask.js" type="text/javascript"></script>
+</body>
+</html>

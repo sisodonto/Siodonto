@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-user">
+                <div class="content">
+                    <h3>Dados do convênio</h3>
+                    <?php foreach ($convenios as $key => $value): ?>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><b>#ID</b> <?php echo $value->id; ?></p>
+                            <p><b>CNPJ</b> <?php echo $value->cnpj; ?></p>
+                            <p><b>Razão Social</b> <?php echo $value->razao_social; ?></p>
+                            <p><b>Nome Fantasia</b> <?php echo $value->nome_fantasia; ?></p>
+                            <p><b>Rua</b> <?php echo $value->rua; ?></p>
+                            <p><b>Bairro</b> <?php echo $value->bairro; ?></p>
+                            <p><b>Número</b> <?php echo $value->numero; ?></p>
+                            <p><b>Cidade</b> <?php echo $value->cidade; ?></p>
+                            <p><b>Cep</b> <?php echo $value->cep; ?></p>
+                            <p><b>Estado</b> <?php echo $value->estados->nome; ?></p>
+                            <p><b>Data de Assinatura</b> <?php echo date('d/m/Y', strtotime($value->data_assinatura)); ?></p>
+                        </div>    
+                        <div class="col-md-6">
+                            <p><b>Prazo de Vigilância</b> <?php echo date('d/m/Y', strtotime($value->prazo_vigilancia)); ?></p>
+                            <p><b>Tipo</b> <?php echo $value->tipo; ?></p>
+                            <p><b>Valor de Reembolso</b> <?php echo $value->valor_reembolso; ?></p>
+                            <p><b>Email</b> <?php echo $value->email; ?></p>
+                            <p><b>Site</b> <?php echo $value->site; ?></p>
+                            <p><b>Telefone</b> <?php echo $value->telefone; ?></p>
+                            <p><b>Objetivo</b> <?php echo $value->objetivo; ?></p>
+                            <p><b>Status</b> <?php echo $value->status; ?></p>
+                            <p><b>Cadastrado em</b> <?php echo date('d/m/Y H:i:s', strtotime($value->created_at)); ?></p>
+                            <p><b>Descrição</b> <?php echo $value->descricao; ?></p>
+                        </div>    
+                    </div>
+                    <?php endforeach ?>
+                </div>
+                <div class="footer">
+                    <a href="<?php echo URL_BASE; ?>convenio" class="btn btn-defualt">Tabela Principal</a>
+                    <a href="javascript:window.history.go(-1)" class="btn btn-defualt">Voltar</a>
+                    <a href="<?php echo URL_BASE ?>painel/convenios/edit/<?php echo $value->id ?>" class="btn btn-defualt">Atualizar</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

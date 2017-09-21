@@ -1,0 +1,110 @@
+.title{
+	font-weight: bold;
+	font-size: 35px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.menu{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.form_dentista{
+	display: none;
+}
+
+.form_secretaria{
+	display: none;
+}
+
+.big{
+	font-size: 60px;
+}
+
+.main_icon{
+	text-align: center;
+}
+
+#logo{
+	max-width: 100%;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#logo-bar{
+	max-width: 100%;
+	background-image: url('../img/odonto-logo-bar.png');
+	height: 250px;
+}
+
+.login{
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+
+.dias{
+	font-size: 12px;
+	background-color: #D3D3D3;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.dias:hover{
+	color: #FFFFFF;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+.bs-searchbox input{
+	border: 1px solid #D3D3D3 !important;
+}
+.bs-searchbox {
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.url-show{
+	color: #000000;
+}
+
+.url-show:hover, .url-show:active, .url-show:visited{
+	font-weight: bold;
+	color: #000000;
+}
+
+.status_1{
+	background-color: #98FB98;
+	padding: 5px;
+	border-radius: 5px;
+	display: inline;
+}
+
+.status_0{
+	background-color: #CD5C5C;
+	padding: 5px;
+	border-radius: 5px;
+	display: inline;
+}
+
+.table-dentistas{
+	overflow: auto;
+}
+
+.sidebar, .sidebar-wrapper{
+	height: 100% !important;
+}
+
+#warning{
+	display: none;
+}

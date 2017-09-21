@@ -1,0 +1,67 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="title" id="title">Relatório de Tratamentos</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-right">
+                                    <a href="javascript:window.history.go(-1)" class="btn btn-default">Voltar</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <form method="post">
+                                       
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" class="form-control" id="relatorio_tratamento_nome" name="nome" placeholder="Nome" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Valor</label>
+                                        <input type="text" class="form-control" id="relatorio_valor" name="valor" placeholder="Valor" value="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Relatório</p>
+                                    <div class="content table-responsive table-full-width">
+                                        <table id="relatorio-table" class="table table-striped table-no-bordered table-hover dataTable dtr-inline table-dentistas">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Nome</th>
+                                                    <th>Descrição</th>
+                                                    <th>valor</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbody">
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="<?php echo URL_BASE; ?>relatorios" class="btn btn-defualt">Página principal de relatórios</a>
+                            <a href="#" id="relatorio-pdf" class="btn btn-default pull-right">Gerar relatório PDF</a>
+                            <div class="clearfix"></div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,115 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="title" id="title">Relatório de agenda</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-right">
+                                    <a href="javascript:window.history.go(-1)" class="btn btn-default">Voltar</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <form method="post">
+                           
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Dentista</label>
+                                        <select data-live-search="true" autofocus="true" id="relatorio_id_dentistas" name="id_dentistas" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                                            <option value="">Selecione</option>
+                                            <?php 
+                                                foreach ($dentistas as $key => $value):
+                                                    $dias = $agenda->formatar_dias($value->fk_dias); 
+                                                    $inicio = date('H:i',strtotime($value->horario_atendimento_inicio));
+                                                    $fim = date('H:i',strtotime($value->horario_atendimento_fim));
+                                                    $dia_calendario = $agenda->formatar_dias_para_calendario($value->fk_dias);
+                                            ?>
+                                                 <option value="<?php echo $value->id; ?>" data-dia="<?php echo $dia_calendario; ?>"><?php echo "{$value->nome} Trabalha {$dias} das {$inicio} às {$fim}"; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Paciente</label>
+                                        <select data-live-search="true" autofocus="true" id="relatorio_id_pacientes" name="id_pacientes" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($pacientes as $key => $value): ?>
+                                                 <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Tratamento</label>
+                                        <select data-live-search="true" autofocus="true" id="relatorio_fk_tratamentos" name="fk_tratamentos" class="form-control selectpicker" data-title="Selecione" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($tratamentos as $key => $value): ?>
+                                                 <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Dia/Data/Hora inicial</label>
+                                        <input type="text" class="form-control datetimepicker" id="relatorio_data_hora_inicial" name="data_hora" placeholder="Dia/Data inicial" value="" />
+                                        <div class="help-block with-errors" id="agenda_data_hora"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Dia/Data/Hora final</label>
+                                        <input type="text" class="form-control datetimepicker" id="relatorio_data_hora_final" name="data_hora" placeholder="Dia/Data final" value="" />
+                                        <div class="help-block with-errors" id="agenda_data_hora"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Relatório</p>
+                                    <div class="content table-responsive table-full-width">
+                                        <table id="relatorio-table" class="table table-striped table-no-bordered table-hover dataTable dtr-inline table-dentistas">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Dentista</th>
+                                                    <th>Paciente</th>
+                                                    <th>Tratamento</th>
+                                                    <th>Data Marcada</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbody">
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="<?php echo URL_BASE; ?>relatorios" class="btn btn-defualt">Página principal de relatórios</a>
+                            <a href="#" id="relatorio-pdf" class="btn btn-default pull-right">Gerar relatório PDF</a>
+                            <div class="clearfix"></div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

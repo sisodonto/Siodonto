@@ -1,0 +1,110 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <?php $this->alert->show($_QUERY); ?>
+                    <div class="header">
+                        <p class="title">Atualizar Fornecedor</p>
+                    </div>
+                    <div class="content">
+                        <form method="post" action="<?php echo URL_BASE; ?>atualizar-fornecedor" data-toggle="validator">
+                            <input type="hidden" name="id" value="<?php echo $fornecedores[0]->id; ?>">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" autofocus="true" class="form-control" id="nome" name="nome" placeholder="Nome" value="<?php echo $fornecedores[0]->nome; ?>" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Capital Social</label>
+                                        <input type="text" class="form-control" id="capital_social" name="capital_social" placeholder="Capital Social" value="<?php echo $fornecedores[0]->capital_social; ?>" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Inscrição Estadual</label>
+                                        <input type="text" class="form-control" id="inscricao_estadual" name="inscricao_estadual" placeholder="Inscrição estadual" value="<?php echo $fornecedores[0]->inscricao_estadual; ?>" required>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Tipo de Empresa</label>
+                                        <select data-live-search="true" name="fk_tipoempresas" class="form-control selectpicker" data-title="Single Select" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($tipos_de_empresas as $key => $value): ?>
+                                            <?php $selected = ($value->id == $fornecedores[0]->tipoempresas->id)?'selected':''; ?>
+                                            <option <?php echo $selected; ?> value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Ramo de Negócios</label>
+                                        <select data-live-search="true" name="fk_ramodenegocios" class="form-control selectpicker" data-title="Single Select" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($ramo_de_negocios as $key => $value): ?>
+                                            <?php $selected = ($value->id == $fornecedores[0]->ramodenegocios->id)?'selected':''; ?>
+                                            <option <?php echo $selected; ?> value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Natureza Jurídica</label>
+                                        <select data-live-search="true" name="fk_naturezajuridica" class="form-control selectpicker" data-title="Single Select" data-style="btn-default btn-block" data-menu-style="dropdown-blue" required>
+                                            <option value="">Selecione</option>
+                                            <?php foreach ($naturezas_juridicas as $key => $value): ?>
+                                            <?php $selected = ($value->id == $fornecedores[0]->naturezajuridica->id)?'selected':''; ?>
+                                            <option <?php echo $selected; ?> value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                                            <?php endforeach ?>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Linha de Produto</label>
+                                        <input type="text" class="form-control" id="linha_produto" name="linha_produto" placeholder="Linha de Produto" value="<?php echo $fornecedores[0]->linha_produto; ?>" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Agência</label>
+                                        <input type="text" class="form-control" id="agencia" name="agencia" placeholder="Agência" value="<?php echo $fornecedores[0]->agencia; ?>" required>
+                                        <span class="help-block with-errors"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Conta Corrente</label>
+                                        <input type="text" class="form-control" id="conta_corrente" name="conta_corrente" placeholder="Conta Corrente" value="<?php echo $fornecedores[0]->conta_corrente; ?>" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:window.history.go(-1)" class="btn btn-defualt">Voltar</a>
+                            <button type="submit" class="btn btn-default pull-right">Atualizar dados</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

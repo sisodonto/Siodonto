@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-user">
+                <div class="content">
+                    <h3>Agenda</h3>
+                    <?php foreach ($agendas as $key => $value): ?>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <?php $dentista = $usuario->find_by_id_and_nome($value->id_dentistas)[0]; ?>
+                            <?php $paciente = $usuario->find_by_id_and_nome($value->id_pacientes)[0]; ?>
+                            <?php $validade = $agenda->verificar_validade($value->data_hora); ?>
+                            <p><b>#ID</b> <?php echo $value->id; ?></p>
+                            <p><b>Status</b> <span class="status_<?php echo $validade; ?>"><?php echo ($validade == 1)?'Agenda ativa':'Agenda vencida'; ?></span></p>
+                            <p><b>Dentista</b> <a class="url-show" target="blank" href="<?php echo URL_BASE; ?>painel/usuarios/show/<?php echo $dentista->id; ?>"><?php echo $dentista->nome; ?></a></p>
+                            <p><b>Paciente</b> <a class="url-show" target="blank" href="<?php echo URL_BASE; ?>painel/usuarios/show/<?php echo $paciente->id; ?>"><?php echo $paciente->nome; ?></a></p>
+                            <p><b>Tratamento</b> <a class="url-show" target="blank" href="<?php echo URL_BASE; ?>painel/tratamentos/show/<?php echo $dentista->id; ?>"><?php echo $value->tratamentos->nome; ?></a></p>
+                            <p><b>Agendado para</b> <?php echo $agenda->formatar_data_para_escrita($value->data_hora,'data-string'); ?></p>
+                            <p><b>Anotações</b> <?php echo $value->anotacoes; ?></p>
+                            <p><b>Cadastrado em</b> <?php echo date('d/m/Y H:i:s', strtotime($value->created_at)); ?></p>
+                        </div>    
+                    </div>
+                    <?php endforeach ?>
+                </div>
+                <div class="footer">
+                    <?php if ($_SESSION['tipo'] == 1 || $_SESSION['tipo'] == 2): ?>
+                    <a href="<?php echo URL_BASE; ?>agenda" class="btn btn-defualt">Tabela Principal</a>
+                    <a href="<?php echo URL_BASE ?>painel/agendas/edit/<?php echo $value->id ?>" class="btn btn-defualt">Atualizar</a>
+                    <?php endif; ?>
+                    <a href="javascript:window.history.go(-1)" class="btn btn-defualt">Voltar</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

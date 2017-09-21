@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-user">
+                <?php $this->alert->show($_QUERY); ?>
+                <div class="content">
+                    <h3>Dados do Produto - Medicamentos</h3>
+                    <?php foreach ($medicamentos as $key => $value): ?>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><b>#ID</b> <?php echo $value->id; ?></p>
+                            <p><b>Nome</b> <?php echo $value->nome; ?></p>
+                            <p><b>Tarja</b> <?php echo $value->cor_tarja; ?></p>
+                            <p><b>Forma</b> <?php echo $value->forma; ?></p>
+                            <p><b>Preço</b> R$ <?php echo $value->preco; ?></p>
+                            <p><b>Descrição</b> <?php echo $value->descricao; ?></p>
+                            <p><b>Cadastrado em</b> <?php echo date('d/m/Y H:i:s', strtotime($value->created_at)); ?></p>
+                        </div>    
+                    </div>
+                    <?php endforeach ?>
+                </div>
+                <div class="footer">
+                    <a href="<?php echo URL_BASE; ?>produto-medicamento" class="btn btn-defualt">Tabela Principal</a>
+                    <a href="javascript:window.history.go(-1)" class="btn btn-defualt">Voltar</a>
+                    <a href="<?php echo URL_BASE ?>painel/produto_medicamentos/edit/<?php echo $value->id ?>" class="btn btn-defualt">Atualizar</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

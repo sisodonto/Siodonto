@@ -1,0 +1,36 @@
+<!--  
+	Arquivo gerado pelo Build_Core 
+	@author Maickon Rangel - maickon4developers@gmail.com
+	Prodigio Framework - 2017
+	View: login
+-->
+<div class="content">
+    <div class="container">
+        <div class="row">                   
+            <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                <form method="post" action="<?php echo URL_BASE; ?>entrar">
+                    <div class="card login">
+                        <?php if (isset($_QUERY['erro']) and $_QUERY['erro'] == 'true'): ?>
+                            <?php echo $msg->msg(['danger'=>'erro']); ?>
+                        <?php endif ?>
+                        <div class="header text-center">Login</div>
+                        <div class="content">
+                        	<div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="Informe o seu email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input type="password" name="senha" placeholder="Informe a sua senha" class="form-control">
+                            </div>                                    
+                        </div>
+                        <div class="footer text-center">
+                            <button type="submit" class="btn btn-dufault btn-lg">Login</button>
+                        </div>
+                        <br>
+                    </div>
+                </form>   
+            </div>                
+        </div>                
+    </div>                
+</div>
